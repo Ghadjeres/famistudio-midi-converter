@@ -140,8 +140,23 @@ def fami_to_mid(input_txt_file, output_mid_file):
     # Write midi
 
     # Constants:
-    channel_index_to_prog = {1: 80, 2: 81, 3: 38, 4: 121}
-    prog_to_instrument_name = {80: 'p1', 81: 'p2', 38: 'tr', 121: 'no'}
+    # channel_index_to_prog = {1: 80, 2: 81, 3: 38, 4: 121}
+    # prog_to_instrument_name = {80: 'p1', 81: 'p2', 38: 'tr', 121: 'no'}
+    channel_index_to_prog = {1: 80,
+                             2: 81,
+                             3: 38,
+                             4: 121,
+                             5: 122,
+                             6: 82,
+                             7: 83,
+                             8: 84}
+    prog_to_instrument_name = {80: 'p1', 81: 'p2',
+                               38: 'tr', 121: 'no',
+                               122: 'dpcm',
+                               82: 'p12',
+                               83: 'p22',
+                               84: 'p32'
+                               }
     # Midi
     midi = pretty_midi.PrettyMIDI(initial_tempo=120, resolution=22050)
     current_note = 0
