@@ -1,4 +1,4 @@
-# famistudio-midi-converter
+# FamiStudio to MIDI converter
 Simple scripts to convert [FamiStudio](https://famistudio.org/) text format to MIDI.
 
 # Usage
